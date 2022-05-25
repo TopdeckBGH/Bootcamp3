@@ -82,7 +82,6 @@ public class ElementHelper {
     }
 
     /**
-     *
      * @param key
      */
     public void checkElementPresence(By key) {
@@ -193,10 +192,9 @@ public class ElementHelper {
     }
 
     /**
-     *
      * @param URL
      */
-    public void checkURL(String URL){
+    public void checkURL(String URL) {
         Assert.assertEquals(driver.getCurrentUrl(), URL);
     }
 

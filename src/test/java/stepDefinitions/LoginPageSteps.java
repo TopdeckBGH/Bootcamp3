@@ -32,9 +32,8 @@ public class LoginPageSteps {
     }
 
     @Then("should see \"GİRİŞ YAP\" title")
-    //public void assertLabelLogin() { loginPage.checkMail();}
     public void assertLabelLogin() {
-        homePage.checkLoginPage();
+        loginPage.checkLoginPage();
     }
 
     @Then("should see \"E-Posta\" radio button")

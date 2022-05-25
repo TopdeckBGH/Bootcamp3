@@ -33,25 +33,14 @@ public class LoginPage {
     By txtLoginError = By.cssSelector(".login-form__header-errors--p");
 
     // Text
-    String mail = "E-Posta";
-    String phone = "Telefon";
-    String txtFieldMail = "E-Posta Adresiniz";
-    String txtFieldPW= "Şifreniz";
-    String rememberPW = "Beni Hatırla";
-    String forgotPW = "Şifremi Unuttum";
     String login = "GİRİŞ YAP";
-    String correctMail = "enes@mail.com";
     String wrongMailError = "Lütfen geçerli bir e-posta adresi giriniz.";
     String wrongPWError = "Lütfen e-posta adresinizi giriniz.";
 
 
     // Check Email Components
     public void clickMail() { elementHelper.click(radioBtnMail);}
-    public void checkLoginPage() { elementHelper.checkElementPresence(lblLoginPage);}
-//    public void checkMail() { elementHelper.checkElementWithText(radioBtnMail, mail);}
-//    public void checkPhone() { elementHelper.checkElementWithText(radioBtnPhone, phone);}
-//    public void checkMailText() { elementHelper.checkElementWithText(homePage.txtFieldMail, txtFieldMail);}
-//    public void checkPWText() { elementHelper.checkElementWithText(homePage.txtFieldPW, txtFieldPW);}
+    public void checkLoginPage() { elementHelper.checkElementWithText(lblLoginPage, login);}
     public void checkMail() { elementHelper.checkElementPresence(radioBtnMail);}
     public void checkPhone() { elementHelper.checkElementPresence(radioBtnPhone);}
     public void checkMailText() { elementHelper.checkElementPresence(homePage.txtFieldMail );}
