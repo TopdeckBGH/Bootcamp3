@@ -199,4 +199,16 @@ public class ElementHelper {
     public void checkURL(String URL){
         Assert.assertEquals(driver.getCurrentUrl(), URL);
     }
+
+    public void checkElementWithText_False(By key, String text) {
+        boolean find = true;
+        List<WebElement> elements = findElements(key);
+        for (WebElement element : elements) {
+            if (!element.getText().contains(text)) {
+                find = false;
+                break;
+            }
+        }
+        Assert.assertEquals(false, find);
+    }
 }

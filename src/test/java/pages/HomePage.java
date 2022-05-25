@@ -28,10 +28,5 @@ public class HomePage {
     //Check Login Page
     public void checkHomePage() { elementHelper.checkURL("https://www.lcwaikiki.com/tr-TR/TR");}
     public void clickLoginPage() { elementHelper.click(btnLoginPage);}
-    public void checkLoginPage() {
-        elementHelper.presenceElement(txtFieldMail) ;
-        elementHelper.presenceElement(txtFieldPW);
-    }
-
-
+    public void checkLoginPage() { elementHelper.checkElementPresence(txtFieldPW);}
 }
