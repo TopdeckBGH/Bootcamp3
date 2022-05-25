@@ -1,19 +1,19 @@
 @LoginPage
 Feature: Login Page
 
-#  @Email @Components
-#  Scenario: Check Email Components
-#    Given Enes is on Login Page
-#    When click "E-Posta" radio button
-#    Then should see "GIRIS YAP" title
-#    Then should see "E-Posta" radio button
-#    Then should see "Telefon" radio button
-#    Then should see "E-Posta Adresiniz" text on Email
-#    Then should see "Sifreniz" text on Password
-#    Then should see Show Password Icon
-#    Then should see "Beni Hatirla" remember me
-#    Then should see "Sifremi Unuttum" forgot password
-#    Then should see "GIRIS YAP" login button
+  @Email @Components
+  Scenario: Check Email Components
+    Given Enes is on Login Page
+    When click "E-Posta" radio button
+    Then should see "GİRİŞ YAP" title
+    Then should see "E-Posta" radio button
+    Then should see "Telefon" radio button
+    Then should see "E-Posta Adresiniz" text on Email
+    Then should see "Şifreniz" text on Password
+    Then should see Show Password Icon
+    Then should see "Beni Hatırla" remember me
+    Then should see "Şifremi Unuttum" forgot password
+    Then should see "GİRİŞ YAP" login button
 #
 #  @Phone @Components
 #  Scenario: Check Phone Components

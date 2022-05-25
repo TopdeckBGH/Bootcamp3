@@ -3,6 +3,6 @@ Feature: Home Page
 
   @Check
   Scenario: Check Login Page
-    Given Enes is on Home page
-    When click "Giris Yap" card in the top rigt
-    Then should see Login Page
+    Given Enes is on Homepage
+    When Click "Giriş Yap" card in the top right
+    Then Should see Login Page
