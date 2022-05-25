@@ -14,12 +14,10 @@ public class DriverFactory {
     static WebDriver driver;
     static Properties properties;
 
-    public static WebDriver initiliazeDriver(String browser){
+    public static WebDriver initializeDriver(String browser){
         properties = ConfigReader.getProperties();
         if (browser.equals("Chrome")) {
             WebDriverManager.chromedriver().setup();
-            //chromeOptions.addArguments("--ignore-certificate-errors");
-            //chromeOptions.addArguments("--headless");
             driver = new ChromeDriver(chromeOptions);
 
         } else if (browser.equals("Firefox")) {
