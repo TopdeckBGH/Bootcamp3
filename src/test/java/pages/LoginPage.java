@@ -26,7 +26,7 @@ public class LoginPage {
     By radioBtnPhone = By.cssSelector("[value=Phone]");
     By btnShowPW = By.cssSelector("[src=\"/Resource/Images/customer/show-password-open.png\"]");
     By btnRememberPW = By.cssSelector("[name=\"rememberMe\"]");
-    By btnForgotPW = By.cssSelector("[data-tracking-label=\"ŞifremiUnuttum\"]");
+    By btnForgotPW = By.cssSelector("[href=\"https://www.lcwaikiki.com/tr-TR/TR/sifremi-unuttum\"]");
     By btnLogin = By.cssSelector("[type=\"submit\"]");
     By txtFieldPhone = By.cssSelector("[name=\"phone\"]");
     By txtError = By.cssSelector(".error");

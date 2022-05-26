@@ -19,7 +19,8 @@ public class DriverFactory {
         if (browser.equals("Chrome")) {
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver(chromeOptions);
-
+            // Removes Bot Detection
+            chromeOptions.addArguments("--disable-blink-features=AutomationControlled");
         } else if (browser.equals("Firefox")) {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
